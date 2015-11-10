@@ -37,34 +37,147 @@ footer{
     box-shadow: 0 0 25px #272822 inset;
 }
 
-/*Classe*/
-.qdo{
-    border: 1px solid black;
-    width: 100px; height: 100px;
-    position: absolute;
-    margin: 20px;
-}
 
 .final{clear: both;}
 
-/*Identificadores - ID*/
-#absrel{
-    background-color: deeppink;
-    width: 500px; height: 500px;
-    position: relative;
-    /*Joga para trás*/
-    z-index: -1;
-    /*Centraliza a div*/
-    display: block;
-    margin: 0 auto;
+@media screen and (min-width:1024px){
+    /*Identificadores - ID*/
+    #absrel{
+        background-color: deeppink;
+        width: 500px; height: 500px;
+        position: relative;
+        /*Joga para trás*/
+        z-index: -1;
+        /*Centraliza a div*/
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*Classe*/
+    .qdo{
+        border: 1px solid black;
+        width: 100px; height: 100px;
+        position: absolute;
+        margin: 20px;
+    }
+
+    #quadrado1{background-color: red;
+               bottom: 20px; right: 50px;
+    }
+    #quadrado2{background-color: green;
+               top: 100px; left: 100px;
+    }
+    #quadrado3{background-color: blue;
+               top: 150px; left: 150px;
+    }
+    #topo{
+        background-color: maroon;
+    }
 }
 
-#quadrado1{background-color: red;
-           bottom: 20px; right: 50px;
+@media screen and (min-width: 667px) and (max-width: 1023px){
+    /*Identificadores - ID*/
+    #absrel{
+        background-color: yellowgreen;
+        width: 300px; height: 300px;
+        position: relative;
+        /*Joga para trás*/
+        z-index: -1;
+        /*Centraliza a div*/
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*Classe*/
+    .qdo{
+        border: 1px solid black;
+        width: 50px; height: 50px;
+        position: absolute;
+        margin: 20px;
+    }
+
+    #quadrado1{background-color: red;
+               bottom: 10px; 
+               right: 10px;
+    }
+    #quadrado2{background-color: green;
+               top: 10px; 
+               left: 10px;
+    }
+    #quadrado3{background-color: blue;
+               top: 150px; 
+               left: 150px;
+    }
+    footer{
+        width: 80px; 
+        padding: 40px 0;
+        background-color: lightsalmon
+    }
+    #topo{
+        background-color: maroon;
+    }    
 }
-#quadrado2{background-color: green;
-           top: 100px; left: 100px;
+
+@media screen and (max-width: 666px){
+    /*Identificadores - ID*/
+    #absrel{
+        background-color: orange;
+        width: 150px; height: 150px;
+        position: relative;
+        /*Joga para trás*/
+        z-index: -1;
+        /*Centraliza a div*/
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*Classe*/
+    .qdo{
+        border: 1px solid black;
+        width: 30px; 
+        height: 30px;
+        position: absolute;
+        margin: 20px;
+    }
+
+    #quadrado1{background-color: red;
+               bottom: 25px; 
+               right: 15px;
+    }
+    #quadrado2{background-color: green;
+               top: 5px; 
+               left: 5px;
+    }
+    #quadrado3{background-color: blue;
+               top: 90px; 
+               left: 90px;
+    }
+    footer{
+        display: none;
+    }
+    #topo{
+        background-color: darkslateblue;
+    }    
 }
-#quadrado3{background-color: blue;
-           top: 150px; left: 150px;
+
+@media screen and (orientation: landscape){
+    /*Paisagem - Horizontal*/
+    #paisagem{
+        display: block;
+        width: 140px;
+        height: 100px;
+        background-color: yellow;
+    }
+    #retrato{display: none;}
+}
+
+@media screen and (orientation: portrait){
+    /*Retrato - Vertical*/
+    #paisagem{display: none;}
+    #retrato{
+        display: block;
+        width: 100px;
+        height: 140px;
+        background-color: greenyellow;
+    }
 }
